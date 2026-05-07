@@ -1,0 +1,2291 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ========== SEO META TAGS ========== -->
+<title>Stylo Arte | Serralheria e Vidraçaria em Itaquera SP | 28 Anos de Experiência</title>
+<meta name="description" content="Stylo Arte: serralheria e vidraçaria em Itaquera há 28 anos. Esquadrias de alumínio, box de vidro, portões, janelas e mais. Orçamento grátis!">
+<meta name="keywords" content="serralheria itaquera, vidraçaria itaquera, esquadrias alumínio sp, box de vidro, portões alumínio zona leste">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Stylo Arte">
+<link rel="canonical" href="https://www.styloarteserralheria.com.br">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Stylo Arte | Serralheria e Vidraçaria em Itaquera SP">
+<meta property="og:description" content="28 anos de experiência em esquadrias de alumínio e vidraçaria. Qualidade, pontualidade e garantia.">
+<meta property="og:url" content="https://www.styloarteserralheria.com.br">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:image" content="https://www.styloarteserralheria.com.br/img/og/og-image.jpg">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Stylo Arte | Serralheria e Vidraçaria em Itaquera SP">
+<meta name="twitter:description" content="28 anos transformando projetos em realidade.">
+
+<!-- Schema.org LocalBusiness -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Stylo Arte Serralheria e Vidraçaria",
+  "image": "https://www.styloarteserralheria.com.br/logo-styloarte.png",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Av. Alziro Zarur, 808",
+    "addressLocality": "São Paulo",
+    "addressRegion": "SP",
+    "postalCode": "03570-000",
+    "addressCountry": "BR"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": -23.5489,
+    "longitude": -46.4441
+  },
+  "telephone": "+55 (11) 99534-5603",
+  "email": "stylo.arte@uol.com.br",
+  "openingHours": ["Mo-Fr 08:00-18:00", "Sa 08:00-13:00"],
+  "url": "https://www.styloarteserralheria.com.br",
+  "priceRange": "$$",
+  "description": "Serralheria e Vidraçaria em Itaquera com 28 anos de experiência. Esquadrias de alumínio, box de vidro, portões, janelas e grades.",
+  "areaServed": "São Paulo",
+  "currenciesAccepted": "BRL",
+  "paymentAccepted": "Pix, Dinheiro, Cartão"
+}
+</script>
+
+<!-- Google Fonts -->
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* ========== VARIÁVEIS CSS GLOBAIS ========== */
+:root {
+  --bg-dark: #f8f9fc;
+  --bg-darker: #eef0f6;
+  --bg-card: #ffffff;
+  --primary: #1a3a6b;
+  --primary-light: #2952a3;
+  --primary-dark: #0f2444;
+  --accent: #c0392b;
+  --accent-light: #e74c3c;
+  --silver: #7f8c9a;
+  --white: #ffffff;
+  --dark-text: #1a2332;
+  --gray-text: #5a6878;
+  --green-wpp: #25D366;
+  --gold: #1a3a6b;
+  --gold-light: #2952a3;
+  --gold-dark: #0f2444;
+  --teal: #2980b9;
+  --font-title: 'Playfair Display', serif;
+  --font-body: 'Inter', sans-serif;
+  --transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* ========== RESET E BASE ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--bg-dark);
+  color: var(--dark-text);
+  overflow-x: hidden;
+  line-height: 1.6;
+  margin-top: 36px;
+}
+
+/* ========== GRAIN OVERLAY ========== */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3'/%3E%3CfeColorMatrix values='0 0 0 0 0.5 0 0 0 0 0.55 0 0 0 0 0.6 0 0 0 0.08 0'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 9998;
+  opacity: 0.15;
+  mix-blend-mode: overlay;
+}
+
+/* ========== TOP BANNER ANIMADO ========== */
+.top-banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 36px;
+  background: linear-gradient(90deg, #0f2444, #1a3a6b, #c0392b, #1a3a6b, #0f2444);
+  background-size: 300% 100%;
+  animation: bannerGradient 8s ease infinite;
+  z-index: 1001;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+@keyframes bannerGradient {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+.banner-track {
+  display: flex;
+  width: max-content;
+  animation: scrollBanner 40s linear infinite;
+  white-space: nowrap;
+  align-items: center;
+  height: 100%;
+}
+.banner-track:hover { animation-play-state: paused; }
+@keyframes scrollBanner {
+  from { transform: translateX(0); }
+  to { transform: translateX(-33.33%); }
+}
+.banner-group {
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+.banner-item {
+  color: #ffffff;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+}
+.banner-icon {
+  font-size: 0.85rem;
+}
+.banner-sep {
+  color: rgba(255,255,255,0.4);
+  font-size: 0.5rem;
+}
+@media (max-width: 768px) {
+  .top-banner { height: 30px; }
+  .banner-item { font-size: 0.7rem; padding: 0 14px; }
+  body { margin-top: 30px; }
+}
+
+/* ========== NAVBAR ========== */
+.navbar {
+  position: fixed;
+  top: 36px; left: 0;
+  width: 100%;
+  padding: 20px 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  transition: var(--transition);
+  background: transparent;
+}
+.navbar.scrolled {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(26, 58, 107, 0.15);
+  padding: 14px 5%;
+  box-shadow: 0 4px 25px rgba(26,58,107,0.08);
+}
+@media (max-width: 768px) {
+  .navbar { top: 30px; }
+}
+.nav-logo {
+  font-family: var(--font-title);
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: var(--primary);
+  letter-spacing: 3px;
+  position: relative;
+  text-decoration: none;
+}
+.nav-menu {
+  display: flex;
+  gap: 35px;
+  list-style: none;
+}
+.nav-menu a {
+  color: var(--dark-text);
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  position: relative;
+  transition: var(--transition);
+}
+.navbar:not(.scrolled) .nav-menu a {
+  color: var(--white);
+  text-shadow: 0 1px 4px rgba(0,0,0,0.4);
+}
+.nav-menu a::after {
+  content: '';
+  position: absolute;
+  bottom: -6px; left: 0;
+  width: 0; height: 1.5px;
+  background: var(--accent);
+  transition: width 0.3s ease;
+}
+.nav-menu a:hover {
+  color: var(--accent);
+}
+.nav-menu a:hover::after {
+  width: 100%;
+}
+.nav-cta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--green-wpp);
+  color: white;
+  padding: 12px 22px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  animation: pulseGreen 2s infinite;
+  transition: var(--transition);
+}
+.nav-cta:hover {
+  transform: scale(1.05);
+}
+@keyframes pulseGreen {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+  50% { box-shadow: 0 0 0 12px rgba(37, 211, 102, 0); }
+}
+
+/* Hambúrguer */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  z-index: 1001;
+}
+.hamburger span {
+  width: 28px;
+  height: 2px;
+  background: var(--primary);
+  transition: var(--transition);
+}
+.navbar:not(.scrolled) .hamburger span {
+  background: var(--white);
+}
+.hamburger.active span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.hamburger.active span:nth-child(2) { opacity: 0; }
+.hamburger.active span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+.mobile-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 29, 53, 0.97);
+  backdrop-filter: blur(15px);
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--transition);
+}
+.mobile-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+.mobile-overlay ul {
+  list-style: none;
+  text-align: center;
+}
+.mobile-overlay li { margin: 14px 0; }
+.mobile-overlay a {
+  color: var(--white);
+  text-decoration: none;
+  font-family: var(--font-title);
+  font-size: 1.35rem;
+  letter-spacing: 3px;
+  transition: var(--transition);
+}
+.mobile-overlay a:hover { color: var(--accent-light); }
+
+@media (max-width: 1024px) {
+  .nav-menu, .nav-cta { display: none; }
+  .hamburger { display: flex; }
+}
+
+/* ========== HERO SECTION ========== */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #0f2444 0%, #1a3a6b 50%, #0f2444 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  will-change: transform;
+}
+.hero-bg::before {
+  content: '📷 FOTO_HERO_PRINCIPAL.jpg';
+  color: #f1c40f;
+  font-weight: bold;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  border: 1px dashed #f1c40f;
+  padding: 15px 25px;
+  border-radius: 8px;
+  opacity: 0.6;
+}
+.hero-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at top, rgba(41, 82, 163, 0.25), transparent 60%),
+    radial-gradient(ellipse at bottom right, rgba(192, 57, 43, 0.18), transparent 60%),
+    linear-gradient(to bottom, transparent 50%, rgba(15, 36, 68, 0.85));
+}
+
+#particles-canvas {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  padding: 0 20px;
+  max-width: 1100px;
+}
+.hero-title {
+  font-family: var(--font-title);
+  font-size: clamp(3rem, 9vw, 7rem);
+  font-weight: 900;
+  letter-spacing: 6px;
+  background: linear-gradient(135deg, #ffffff, #c8d6e5, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 25px;
+  text-shadow: 0 0 60px rgba(41, 82, 163, 0.5);
+  position: relative;
+  display: inline-block;
+}
+.hero-title::after {
+  content: '|';
+  -webkit-text-fill-color: var(--accent);
+  animation: blink 1s infinite;
+}
+.hero-title.done::after { display: none; }
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+.hero-subtitle {
+  font-size: clamp(1rem, 2vw, 1.3rem);
+  color: rgba(255,255,255,0.85);
+  margin-bottom: 50px;
+  letter-spacing: 2px;
+  font-weight: 300;
+  opacity: 0;
+  animation: fadeInUp 1s ease 2.5s forwards;
+}
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  opacity: 0;
+  animation: fadeInUp 1s ease 3s forwards;
+}
+.btn {
+  padding: 16px 38px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: var(--transition);
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  border: 2px solid transparent;
+  cursor: none;
+}
+.btn-primary {
+  background: var(--green-wpp);
+  color: white;
+  box-shadow: 0 8px 30px rgba(37, 211, 102, 0.3);
+}
+.btn-primary:hover {
+  background: #1ebe5a;
+  transform: translateY(-3px);
+  box-shadow: 0 15px 40px rgba(37, 211, 102, 0.5);
+}
+.btn-outline {
+  background: transparent;
+  color: var(--white);
+  border-color: var(--white);
+}
+.btn-outline:hover {
+  background: var(--white);
+  color: var(--primary);
+  transform: translateY(-3px);
+  box-shadow: 0 15px 40px rgba(255, 255, 255, 0.3);
+}
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  color: var(--white);
+  animation: bounce 2s infinite;
+}
+@keyframes bounce {
+  0%, 100% { transform: translate(-50%, 0); }
+  50% { transform: translate(-50%, 12px); }
+}
+
+/* ========== SEÇÃO GLOBAL ========== */
+section {
+  padding: 100px 5%;
+  position: relative;
+}
+.section-title {
+  font-family: var(--font-title);
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--primary);
+  font-weight: 700;
+}
+.section-title span {
+  color: var(--accent);
+}
+.section-subtitle {
+  text-align: center;
+  color: var(--gray-text);
+  margin-bottom: 70px;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* ========== DIFERENCIAIS / CONTADORES ========== */
+.diferenciais {
+  background: var(--bg-darker);
+  border-top: 1px solid rgba(26, 58, 107, 0.1);
+  border-bottom: 1px solid rgba(26, 58, 107, 0.1);
+}
+.counters-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.counter-card {
+  background: var(--bg-card);
+  padding: 50px 30px;
+  text-align: center;
+  border-radius: 12px;
+  border: 1px solid rgba(26, 58, 107, 0.08);
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 25px rgba(26,58,107,0.08);
+}
+.counter-card::before {
+  content: '';
+  position: absolute;
+  top: -2px; left: -2px; right: -2px; bottom: -2px;
+  background: linear-gradient(45deg, var(--primary), transparent, var(--accent));
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  border-radius: 12px;
+}
+.counter-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--primary);
+  box-shadow: 0 20px 50px rgba(26, 58, 107, 0.18);
+}
+.counter-card svg {
+  width: 50px;
+  height: 50px;
+  fill: var(--primary);
+  margin-bottom: 20px;
+}
+.counter-number {
+  font-family: var(--font-title);
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: var(--primary);
+  line-height: 1;
+  margin-bottom: 10px;
+}
+.counter-label {
+  color: var(--gray-text);
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* ========== SERVIÇOS CARDS ========== */
+.servicos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.servico-card {
+  background: var(--bg-card);
+  padding: 45px 30px;
+  border-radius: 12px;
+  border: 1px solid rgba(26, 58, 107, 0.08);
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 25px rgba(26,58,107,0.08);
+}
+.servico-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 3px;
+  background: linear-gradient(90deg, var(--primary), var(--accent));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease;
+}
+.servico-card:hover::before { transform: scaleX(1); }
+.servico-card:hover {
+  transform: scale(1.04) translateY(-5px);
+  border-color: var(--primary);
+  box-shadow: 0 20px 60px rgba(26, 58, 107, 0.2);
+}
+.servico-card svg {
+  width: 55px;
+  height: 55px;
+  fill: var(--primary);
+  margin-bottom: 25px;
+}
+.servico-card h3 {
+  font-family: var(--font-title);
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  color: var(--primary);
+  transition: var(--transition);
+}
+.servico-card:hover h3 { transform: translateY(-3px); color: var(--accent); }
+.servico-card p {
+  color: var(--gray-text);
+  font-size: 0.9rem;
+  margin-bottom: 25px;
+  min-height: 80px;
+}
+.servico-card .link-projetos {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: var(--transition);
+}
+.servico-card .link-projetos:hover { gap: 14px; }
+
+/* ========== GALERIA SLIDESHOW ========== */
+.galeria {
+  background: var(--bg-darker);
+}
+.galeria-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.galeria-card {
+  background: var(--bg-card);
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(26, 58, 107, 0.08);
+  transition: var(--transition);
+  position: relative;
+  box-shadow: 0 4px 25px rgba(26,58,107,0.08);
+}
+.galeria-card:hover {
+  transform: translateY(-10px);
+  border-color: var(--primary);
+  box-shadow: 0 25px 60px rgba(26, 58, 107, 0.2);
+}
+.galeria-card-header {
+  padding: 18px 22px;
+  border-bottom: 1px solid rgba(26, 58, 107, 0.12);
+  font-family: var(--font-title);
+  font-size: 1.2rem;
+  color: var(--primary);
+  letter-spacing: 1px;
+  background: var(--bg-darker);
+}
+.slideshow {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+}
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+.slide.active { opacity: 1; }
+.slide .placeholder {
+  background: #e8ecf3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 220px;
+  transition: var(--transition);
+}
+.galeria-card:hover .slide .placeholder { transform: scale(1.05); }
+.slide .placeholder span {
+  color: #d4a300;
+  background: rgba(255,255,255,0.85);
+  font-size: 13px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 16px;
+  border: 1px dashed #d4a300;
+  border-radius: 8px;
+}
+.slideshow-dots {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 5;
+}
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(26, 58, 107, 0.4);
+  transition: var(--transition);
+}
+.dot.active {
+  background: var(--accent);
+  width: 22px;
+  border-radius: 4px;
+}
+.galeria-card-footer {
+  padding: 18px 22px;
+}
+.btn-orcamento {
+  display: block;
+  text-align: center;
+  background: transparent;
+  border: 1.5px solid var(--primary);
+  color: var(--primary);
+  padding: 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  transition: var(--transition);
+}
+.btn-orcamento:hover {
+  background: var(--primary);
+  color: var(--white);
+  box-shadow: 0 8px 25px rgba(26, 58, 107, 0.4);
+}
+
+/* ========== SOBRE ========== */
+.sobre-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.sobre-text h2 {
+  font-family: var(--font-title);
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-bottom: 25px;
+  color: var(--primary);
+}
+.sobre-text h2 span { color: var(--accent); }
+.sobre-text p {
+  color: var(--gray-text);
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+.timeline {
+  margin-top: 35px;
+  border-left: 2px solid var(--primary);
+  padding-left: 25px;
+}
+.timeline-item {
+  position: relative;
+  margin-bottom: 25px;
+}
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -32px;
+  top: 5px;
+  width: 12px;
+  height: 12px;
+  background: var(--accent);
+  border-radius: 50%;
+  box-shadow: 0 0 15px var(--accent);
+}
+.timeline-item h4 {
+  color: var(--primary);
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+.timeline-item p {
+  font-size: 0.9rem;
+  color: var(--gray-text);
+  margin: 0;
+}
+.sobre-img {
+  width: 100%;
+  height: 480px;
+  background: #e8ecf3;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(26, 58, 107, 0.15);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 25px rgba(26,58,107,0.12);
+}
+.sobre-img::before {
+  content: '📷 FOTO_EMPRESA_FACHADA.jpg';
+  color: #d4a300;
+  background: rgba(255,255,255,0.85);
+  font-weight: bold;
+  font-size: 14px;
+  border: 1px dashed #d4a300;
+  border-radius: 8px;
+  padding: 12px 22px;
+}
+.sobre-img::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, transparent 40%, rgba(26,58,107,0.05));
+}
+@media (max-width: 768px) {
+  .sobre-grid { grid-template-columns: 1fr; }
+  .sobre-img { height: 320px; }
+}
+
+/* ========== DEPOIMENTOS ESTEIRA ========== */
+.depoimentos {
+  background: var(--bg-darker);
+  overflow: hidden;
+}
+.esteira {
+  display: flex;
+  gap: 30px;
+  width: max-content;
+  animation: scroll-infinito 35s linear infinite;
+}
+.esteira:hover { animation-play-state: paused; }
+@keyframes scroll-infinito {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.depoimento-card {
+  flex-shrink: 0;
+  width: 360px;
+  background: var(--bg-card);
+  padding: 35px 30px;
+  border-radius: 12px;
+  border: 1px solid rgba(26, 58, 107, 0.1);
+  position: relative;
+  box-shadow: 0 4px 25px rgba(26,58,107,0.08);
+}
+.depoimento-card::before {
+  content: '"';
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  font-size: 5rem;
+  color: var(--accent);
+  font-family: var(--font-title);
+  opacity: 0.3;
+  line-height: 1;
+}
+.stars { color: #f1c40f; margin-bottom: 12px; letter-spacing: 3px; }
+.depoimento-text {
+  color: var(--gray-text);
+  font-style: italic;
+  margin-bottom: 18px;
+  font-size: 0.95rem;
+}
+.depoimento-autor {
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+/* ========== FAQ ========== */
+.faq-container {
+  max-width: 850px;
+  margin: 0 auto;
+}
+.faq-item {
+  background: var(--bg-card);
+  margin-bottom: 14px;
+  border-radius: 10px;
+  border: 1px solid rgba(26, 58, 107, 0.08);
+  overflow: hidden;
+  transition: var(--transition);
+  box-shadow: 0 4px 15px rgba(26,58,107,0.06);
+}
+.faq-item.active { border-color: var(--primary); }
+.faq-question {
+  padding: 22px 25px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--primary);
+  transition: var(--transition);
+}
+.faq-question:hover { color: var(--accent); }
+.faq-question .arrow {
+  width: 20px;
+  height: 20px;
+  border-right: 2px solid var(--accent);
+  border-bottom: 2px solid var(--accent);
+  transform: rotate(45deg);
+  transition: transform 0.4s ease;
+}
+.faq-item.active .arrow { transform: rotate(225deg); }
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, padding 0.5s ease;
+  padding: 0 25px;
+  color: var(--gray-text);
+  font-size: 0.95rem;
+}
+.faq-item.active .faq-answer {
+  max-height: 300px;
+  padding: 0 25px 22px;
+}
+
+/* ========== CONTATO ========== */
+.contato {
+  background: var(--bg-darker);
+}
+.contato-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.form-contato {
+  background: var(--bg-card);
+  padding: 40px;
+  border-radius: 12px;
+  border: 1px solid rgba(26, 58, 107, 0.1);
+  box-shadow: 0 4px 25px rgba(26,58,107,0.1);
+}
+.form-group { margin-bottom: 20px; }
+.form-group label {
+  display: block;
+  color: var(--primary);
+  font-size: 0.85rem;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 14px 16px;
+  background: var(--bg-darker);
+  border: 1px solid rgba(26, 58, 107, 0.15);
+  border-radius: 6px;
+  color: var(--dark-text);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  transition: var(--transition);
+}
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--primary);
+  background: var(--white);
+  box-shadow: 0 0 0 3px rgba(26, 58, 107, 0.12);
+}
+.form-group textarea { resize: vertical; min-height: 110px; }
+.btn-form {
+  width: 100%;
+  padding: 16px;
+  background: var(--green-wpp);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  cursor: none;
+  transition: var(--transition);
+}
+.btn-form:hover {
+  background: #1ebe5a;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(37, 211, 102, 0.4);
+}
+
+.info-contato { display: flex; flex-direction: column; gap: 25px; }
+.info-item {
+  background: var(--bg-card);
+  padding: 25px;
+  border-radius: 12px;
+  border-left: 3px solid var(--accent);
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+  box-shadow: 0 4px 15px rgba(26,58,107,0.06);
+}
+.info-item svg {
+  width: 28px;
+  height: 28px;
+  fill: var(--primary);
+  flex-shrink: 0;
+}
+.info-item h4 {
+  color: var(--primary);
+  margin-bottom: 5px;
+  font-size: 0.85rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+.info-item p, .info-item a {
+  color: var(--dark-text);
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+.mapa-container {
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(26, 58, 107, 0.15);
+  height: 220px;
+  box-shadow: 0 4px 15px rgba(26,58,107,0.08);
+}
+.mapa-container iframe { width: 100%; height: 100%; border: 0; }
+
+@media (max-width: 768px) {
+  .contato-grid { grid-template-columns: 1fr; }
+}
+
+/* ========== FOOTER ========== */
+.footer {
+  background: #0f1d35;
+  padding: 70px 5% 25px;
+  border-top: 3px solid var(--accent);
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 40px;
+  max-width: 1300px;
+  margin: 0 auto 50px;
+}
+@media (max-width: 768px) {
+  .footer-grid { grid-template-columns: 1fr; gap: 30px; }
+}
+.footer-brand h3 {
+  font-family: var(--font-title);
+  color: var(--white);
+  font-size: 1.8rem;
+  margin-bottom: 12px;
+  letter-spacing: 3px;
+}
+.footer-brand p {
+  color: rgba(255,255,255,0.6);
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+.footer-col h4 {
+  color: var(--white);
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.footer-col ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.footer-col a {
+  color: rgba(255,255,255,0.6);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: var(--transition);
+}
+.footer-col a:hover { color: var(--accent-light); }
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+.social-icons a {
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(255,255,255,0.4);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+}
+.social-icons a:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+  transform: translateY(-3px);
+}
+.social-icons a:hover svg { fill: var(--white); }
+.social-icons svg { width: 18px; height: 18px; fill: rgba(255,255,255,0.8); transition: var(--transition); }
+
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding-top: 25px;
+  text-align: center;
+  color: rgba(255,255,255,0.6);
+  font-size: 0.85rem;
+}
+.footer-bottom p { margin-bottom: 8px; }
+.footer-bottom a { color: var(--accent-light); text-decoration: none; }
+.footer-bottom a:hover { color: var(--white); }
+
+.dev-credit {
+  margin-top: 14px;
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.dev-credit strong { color: rgba(255,255,255,0.7); }
+.dev-social-icons { display: flex; gap: 10px; }
+.dev-social-link {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+.dev-ig { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); color: white; }
+.dev-wpp { background: #25D366; color: white; }
+.dev-social-link:hover { transform: translateY(-3px) scale(1.1); box-shadow: 0 6px 20px rgba(0,0,0,0.3); }
+
+/* ========== WHATSAPP FLUTUANTE — CHAMA NO WHATS ========== */
+.wpp-float-container {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 9997;
+}
+.wpp-float-btn {
+  display: flex;
+  align-items: center;
+  background: #25D366;
+  border-radius: 50px;
+  text-decoration: none;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(37, 211, 102, 0.5);
+  animation: wppPulse 2.5s ease-in-out infinite;
+  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  max-width: 60px;
+}
+.wpp-float-btn:hover {
+  max-width: 250px;
+  border-radius: 50px;
+  box-shadow: 0 12px 40px rgba(37, 211, 102, 0.7);
+  animation: none;
+}
+@keyframes wppPulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(37,211,102,0.7), 0 8px 32px rgba(37,211,102,0.5); }
+  50% { box-shadow: 0 0 0 16px rgba(37,211,102,0), 0 8px 32px rgba(37,211,102,0.5); }
+}
+.wpp-float-text {
+  color: white;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+  max-width: 0;
+  overflow: hidden;
+  opacity: 0;
+  padding-left: 0;
+  transition: max-width 0.4s ease, opacity 0.3s ease 0.1s, padding 0.4s ease;
+  font-family: var(--font-body);
+}
+.wpp-float-btn:hover .wpp-float-text {
+  max-width: 180px;
+  opacity: 1;
+  padding-left: 20px;
+}
+.wpp-float-icon {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* ========== MODAL FACEBOOK ========== */
+.fb-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 20, 40, 0.85);
+  backdrop-filter: blur(12px);
+  z-index: 99990;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+  padding: 20px;
+}
+.fb-modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+.fb-modal-box {
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 420px;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 30px 80px rgba(0,0,0,0.5), 0 0 0 1px rgba(255,255,255,0.1);
+  transform: scale(0.92) translateY(20px);
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.fb-modal-overlay.active .fb-modal-box {
+  transform: scale(1) translateY(0);
+}
+.fb-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 22px;
+  background: #f0f2f5;
+  border-bottom: 1px solid #dce0e8;
+}
+.fb-modal-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: #1a1a2e;
+  font-family: var(--font-body);
+}
+.fb-modal-close {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #606770;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+.fb-modal-close:hover { background: #dce0e8; }
+.fb-modal-body {
+  overflow-y: auto;
+  flex: 1;
+}
+
+/* ========== MODAL INSTAGRAM ========== */
+.ig-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 20, 40, 0.85);
+  backdrop-filter: blur(12px);
+  z-index: 99990;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+  padding: 20px;
+}
+.ig-modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+.ig-modal-box {
+  background: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 380px;
+  box-shadow: 0 30px 80px rgba(0,0,0,0.5);
+  transform: scale(0.92) translateY(20px);
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.ig-modal-overlay.active .ig-modal-box {
+  transform: scale(1) translateY(0);
+}
+.ig-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
+  color: white;
+}
+.ig-modal-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  font-family: var(--font-body);
+}
+.ig-modal-close {
+  background: rgba(255,255,255,0.2);
+  border: none;
+  color: white;
+  font-size: 1.1rem;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+.ig-modal-close:hover { background: rgba(255,255,255,0.35); }
+.ig-modal-body {
+  padding: 30px 24px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+.ig-modal-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
+  padding: 3px;
+}
+.ig-modal-avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 3px solid white;
+  object-fit: cover;
+  background: #eee;
+}
+.ig-modal-handle {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #1a1a2e;
+}
+.ig-modal-desc {
+  font-size: 0.88rem;
+  color: #606770;
+  line-height: 1.5;
+  max-width: 280px;
+}
+.ig-modal-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 12px 28px;
+  border-radius: 30px;
+  margin-top: 6px;
+  transition: opacity 0.2s, transform 0.2s;
+  letter-spacing: 0.5px;
+}
+.ig-modal-btn:hover {
+  opacity: 0.9;
+  transform: scale(1.04);
+}
+
+/* ========== MODAIS LEGAIS (PRIVACIDADE / TERMOS / COOKIES) ========== */
+.legal-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(10,20,40,0.8);
+  backdrop-filter: blur(10px);
+  z-index: 99980;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.legal-modal-overlay.active { opacity: 1; visibility: visible; }
+.legal-modal-box {
+  background: #ffffff;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 600px;
+  max-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 25px 60px rgba(0,0,0,0.4);
+  transform: translateY(20px);
+  transition: transform 0.35s cubic-bezier(0.34,1.56,0.64,1);
+}
+.legal-modal-overlay.active .legal-modal-box { transform: translateY(0); }
+.legal-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 25px;
+  border-bottom: 2px solid #1a3a6b;
+  background: #f8f9fc;
+  border-radius: 12px 12px 0 0;
+}
+.legal-modal-header h3 {
+  font-family: var(--font-title);
+  color: #1a3a6b;
+  font-size: 1.3rem;
+}
+.legal-modal-close {
+  background: none;
+  border: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+  color: #7f8c9a;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+.legal-modal-close:hover { background: #eef0f6; color: #1a3a6b; }
+.legal-modal-body {
+  overflow-y: auto;
+  padding: 25px;
+  color: #5a6878;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+.legal-modal-body h4 {
+  color: #1a3a6b;
+  margin: 20px 0 8px;
+  font-size: 1rem;
+}
+.legal-modal-body p { margin-bottom: 12px; }
+
+/* ========== SCROLL REVEAL ========== */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.9s ease, transform 0.9s ease;
+}
+.reveal.visible { opacity: 1; transform: translateY(0); }
+.reveal-left { transform: translateX(-50px); }
+.reveal-left.visible { transform: translateX(0); }
+.reveal-right { transform: translateX(50px); }
+.reveal-right.visible { transform: translateX(0); }
+.reveal-scale { transform: scale(0.92); }
+.reveal-scale.visible { transform: scale(1); }
+
+/* Sequência de delays */
+.delay-1 { transition-delay: 0.1s; }
+.delay-2 { transition-delay: 0.2s; }
+.delay-3 { transition-delay: 0.3s; }
+.delay-4 { transition-delay: 0.4s; }
+
+/* ========== RESPONSIVO ========== */
+@media (max-width: 768px) {
+  section { padding: 70px 5%; }
+  .hero-title { letter-spacing: 3px; }
+  .footer-grid { text-align: center; }
+  .social-icons { justify-content: center; }
+  .timeline { padding-left: 20px; }
+  .dev-credit { flex-direction: column; gap: 8px; }
+}
+</style>
+</head>
+<body>
+
+<!-- ========== TOP BANNER ANIMADO ========== -->
+<div class="top-banner" id="topBanner">
+  <div class="banner-track">
+    <div class="banner-group">
+      <span class="banner-item"><span class="banner-icon">⚡</span> Entrega e instalação rápida na sua região</span>
+      <span class="banner-sep">◆</span>
+      <span class="banner-item"><span class="banner-icon">🛡️</span> Garantia de 1 ano em mão de obra</span>
+      <span class="banner-sep">◆</span>
+      <span class="banner-item"><span class="banner-icon">💰</span> Orçamento 100% gratuito e sem compromisso</span>
+      <span class="banner-sep">◆</span>
+      <span class="banner-item"><span class="banner-icon">⭐</span> +500 clientes satisfeitos na zona leste</span>
+      <span class="banner-sep">◆</span>
+      <span class="banner-item"><span class="banner-icon">🏆</span> 28 anos de excelência em Itaquera</span>
+      <span class="banner-sep">◆</span>
+      <span class="banner-item"><span class="banner-icon">📐</span> Tudo sob medida, do projeto à instalação</span>
+      <span class="banner-sep">◆</span>
+      <span class="banner-item"><span class="banner-icon">🔧</span> Alumínio e vidro com acabamento premium</span>
+      <span class="banner-sep">◆</span>
+      <span class="banner-item"><span class="banner-icon">📞</span> Atendemos Seg-Sex 8h-18h | Sáb 8h-13h</span>
+      <span class="banner-sep">◆</span>
+    </div>
+    <div class="banner-group">
+      <span class="banner-item"><span class="banner-icon">⚡</span> Entrega e instalação rápida na sua região</span>
+      <span class="banner-sep">◆</span>
+      <span class="banner-item"><span class="banner-icon">🛡️</span> Garantia de 1 ano em mão de obra</span>
+      <span class="banner-sep">◆</span>
+      <span class="banner-item"><span class="banner-icon">💰</span> Orçamento 100% gratuito e sem compromisso</span>
+      <span class="banner-sep">◆</span>
+      <span class="banner-item"><span class="banner-icon">⭐</span> +500 clientes satisfeitos na zona leste</span>
+      <span class="banner-sep">◆</span>
+      <span class="banner-item"><span class="banner-icon">🏆</span> 28 anos de excelência em Itaquera</span>
+      <span class="banner-sep">◆</span>
+      <span class="banner-item"><span class="banner-icon">📐</span> Tudo sob medida, do projeto à instalação</span>
+      <span class="banner-sep">◆</span>
+      <span class="banner-item"><span class="banner-icon">🔧</span> Alumínio e vidro com acabamento premium</span>
+      <span class="banner-sep">◆</span>
+      <span class="banner-item"><span class="banner-icon">📞</span> Atendemos Seg-Sex 8h-18h | Sáb 8h-13h</span>
+      <span class="banner-sep">◆</span>
+    </div>
+    <div class="banner-group">
+      <span class="banner-item"><span class="banner-icon">⚡</span> Entrega e instalação rápida na sua região</span>
+      <span class="banner-sep">◆</span>
+      <span class="banner-item"><span class="banner-icon">🛡️</span> Garantia de 1 ano em mão de obra</span>
+      <span class="banner-sep">◆</span>
+      <span class="banner-item"><span class="banner-icon">💰</span> Orçamento 100% gratuito e sem compromisso</span>
+      <span class="banner-sep">◆</span>
+      <span class="banner-item"><span class="banner-icon">⭐</span> +500 clientes satisfeitos na zona leste</span>
+      <span class="banner-sep">◆</span>
+      <span class="banner-item"><span class="banner-icon">🏆</span> 28 anos de excelência em Itaquera</span>
+      <span class="banner-sep">◆</span>
+      <span class="banner-item"><span class="banner-icon">📐</span> Tudo sob medida, do projeto à instalação</span>
+      <span class="banner-sep">◆</span>
+      <span class="banner-item"><span class="banner-icon">🔧</span> Alumínio e vidro com acabamento premium</span>
+      <span class="banner-sep">◆</span>
+      <span class="banner-item"><span class="banner-icon">📞</span> Atendemos Seg-Sex 8h-18h | Sáb 8h-13h</span>
+      <span class="banner-sep">◆</span>
+    </div>
+  </div>
+</div>
+
+<!-- ========== NAVBAR ========== -->
+<nav class="navbar" id="navbar">
+  <a href="#inicio" class="nav-logo">
+    <img src="logo-styloarte.png" alt="Stylo Arte" style="height: 38px; width: auto; display: block;">
+  </a>
+  <ul class="nav-menu">
+    <li><a href="#inicio">Início</a></li>
+    <li><a href="#galeria">Galeria</a></li>
+    <li><a href="#sobre">Sobre Nós</a></li>
+    <li><a href="#depoimentos">Depoimentos</a></li>
+    <li><a href="#faq">Dúvidas</a></li>
+    <li><a href="#contato">Contato</a></li>
+  </ul>
+  <a href="https://wa.me/5511995345603?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20orçamento." target="_blank" class="nav-cta">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    WhatsApp
+  </a>
+  <div class="hamburger" id="hamburger">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- ========== MENU MOBILE OVERLAY ========== -->
+<div class="mobile-overlay" id="mobileOverlay">
+  <ul>
+    <li><a href="#inicio" class="mobile-link">Início</a></li>
+    <li><a href="#galeria" class="mobile-link">Galeria</a></li>
+    <li><a href="#sobre" class="mobile-link">Sobre Nós</a></li>
+    <li><a href="#depoimentos" class="mobile-link">Depoimentos</a></li>
+    <li><a href="#faq" class="mobile-link">Dúvidas</a></li>
+    <li><a href="#contato" class="mobile-link">Contato</a></li>
+    <li><a href="https://wa.me/5511995345603" target="_blank" style="color:var(--green-wpp)">WhatsApp</a></li>
+  </ul>
+</div>
+
+<!-- ========== HERO SECTION ========== -->
+<section class="hero" id="inicio">
+  <div class="hero-bg" id="heroBg"></div>
+  <canvas id="particles-canvas"></canvas>
+  <div class="hero-content">
+    <h1 class="hero-title" id="heroTitle"></h1>
+    <p class="hero-subtitle">Serralheria e Vidraçaria — 28 anos transformando projetos em realidade</p>
+    <div class="hero-buttons">
+      <a href="https://wa.me/5511995345603?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20orçamento." target="_blank" class="btn btn-primary">
+        🟢 Falar no WhatsApp
+      </a>
+      <a href="#servicos" class="btn btn-outline">↓ Conheça Nossos Serviços</a>
+    </div>
+  </div>
+  <div class="scroll-indicator">
+    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <polyline points="6 9 12 15 18 9"></polyline>
+    </svg>
+  </div>
+</section>
+
+<!-- ========== DIFERENCIAIS ========== -->
+<section class="diferenciais">
+  <h2 class="section-title reveal">Nossos <span>Diferenciais</span></h2>
+  <p class="section-subtitle reveal">Excelência reconhecida pelo mercado</p>
+  <div class="counters-grid">
+    <div class="counter-card reveal delay-1">
+      <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+      <div class="counter-number" data-target="28">0</div>
+      <div class="counter-label">Anos de Experiência</div>
+    </div>
+    <div class="counter-card reveal delay-2">
+      <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.11 0-2 .89-2 2v14c0 1.11.89 2 2 2h14c1.11 0 2-.89 2-2V5c0-1.11-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+      <div class="counter-number" data-target="500">0</div>
+      <div class="counter-label">+ Projetos Realizados</div>
+    </div>
+    <div class="counter-card reveal delay-3">
+      <svg viewBox="0 0 24 24"><path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z"/></svg>
+      <div class="counter-number" data-target="100">0</div>
+      <div class="counter-label">% Satisfação Garantida</div>
+    </div>
+    <div class="counter-card reveal delay-4">
+      <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+      <div class="counter-number" style="font-size:2.5rem">SP</div>
+      <div class="counter-label">Toda São Paulo</div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== SERVIÇOS ========== -->
+<section id="servicos">
+  <h2 class="section-title reveal">Nossos <span>Serviços</span></h2>
+  <p class="section-subtitle reveal">Soluções completas em alumínio e vidro</p>
+  <div class="servicos-grid">
+    <div class="servico-card reveal delay-1">
+      <svg viewBox="0 0 24 24"><path d="M12 3L2 12h3v8h6v-6h2v6h6v-8h3L12 3z"/></svg>
+      <h3>Serralheria em Alumínio</h3>
+      <p>Gabinetes, portas, janelas, grades, portões, corrimões, guarda-corpo, porta camarão e fechamento de pia.</p>
+      <a href="#galeria" class="link-projetos">Ver Projetos →</a>
+    </div>
+    <div class="servico-card reveal delay-2">
+      <svg viewBox="0 0 24 24"><path d="M19 19H5V5h14m0-2H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2z"/></svg>
+      <h3>Vidraçaria</h3>
+      <p>Portas, janelas, portões, guarda-corpo, fechamento de sacadas e vitrines comerciais sob medida.</p>
+      <a href="#galeria" class="link-projetos">Ver Projetos →</a>
+    </div>
+    <div class="servico-card reveal delay-3">
+      <svg viewBox="0 0 24 24"><path d="M9 2v6h2V4h2v4h2V2H9zm10 8H5c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-8c0-1.1-.9-2-2-2z"/></svg>
+      <h3>Box de Vidro</h3>
+      <p>Box sob medida para banheiro, elegante, funcional e com acabamento premium em vidro temperado.</p>
+      <a href="#galeria" class="link-projetos">Ver Projetos →</a>
+    </div>
+    <div class="servico-card reveal delay-4">
+      <svg viewBox="0 0 24 24"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"/></svg>
+      <h3>Expositores</h3>
+      <p>Soluções em alumínio e vidro para comércio, vitrines, balcões e displays personalizados.</p>
+      <a href="#galeria" class="link-projetos">Ver Projetos →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ========== GALERIA SLIDESHOWS ========== -->
+<section class="galeria" id="galeria">
+  <h2 class="section-title reveal">Nossa <span>Galeria</span></h2>
+  <p class="section-subtitle reveal">Conheça alguns de nossos projetos realizados</p>
+  <div class="galeria-grid" id="galeriaGrid"></div>
+</section>
+
+<!-- ========== SOBRE ========== -->
+<section id="sobre">
+  <div class="sobre-grid">
+    <div class="sobre-text reveal reveal-left">
+      <h2>28 Anos <span>Construindo</span> Histórias</h2>
+      <p>A <strong style="color:var(--primary)">Stylo Arte</strong> nasceu em Itaquera em 1996 com um propósito claro: oferecer soluções em serralheria e vidraçaria com qualidade incomparável e atendimento personalizado.</p>
+      <p>Pioneira em esquadrias de alumínio na zona leste de São Paulo, somos referência em pontualidade, garantia e acabamento impecável em cada projeto entregue.</p>
+      <p>Nossa equipe combina técnica artesanal com tecnologia de ponta, transformando ambientes residenciais e comerciais em espaços únicos.</p>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h4>1996 — Fundação</h4>
+          <p>Início das atividades em Itaquera com foco em serralheria.</p>
+        </div>
+        <div class="timeline-item">
+          <h4>2005 — Expansão</h4>
+          <p>Inclusão da vidraçaria e box de vidro no portfólio.</p>
+        </div>
+        <div class="timeline-item">
+          <h4>2015 — Marco Histórico</h4>
+          <p>Mais de 300 projetos entregues em toda a Grande São Paulo.</p>
+        </div>
+        <div class="timeline-item">
+          <h4>2024 — Hoje</h4>
+          <p>Mais de 500 clientes satisfeitos e referência consolidada na região.</p>
+        </div>
+      </div>
+    </div>
+    <div class="sobre-img reveal reveal-right"></div>
+  </div>
+</section>
+
+<!-- ========== DEPOIMENTOS ========== -->
+<section class="depoimentos" id="depoimentos">
+  <h2 class="section-title reveal">O Que Dizem Nossos <span>Clientes</span></h2>
+  <p class="section-subtitle reveal">Avaliações reais de quem confia em nosso trabalho</p>
+  <div class="esteira" id="esteira">
+    <!-- Cards inseridos via JS para garantir loop -->
+  </div>
+</section>
+
+<!-- ========== FAQ ========== -->
+<section id="faq">
+  <h2 class="section-title reveal">Dúvidas <span>Frequentes</span></h2>
+  <p class="section-subtitle reveal">Respostas para as perguntas mais comuns</p>
+  <div class="faq-container">
+    <div class="faq-item reveal">
+      <div class="faq-question">Vocês fazem orçamento gratuito?<span class="arrow"></span></div>
+      <div class="faq-answer"><p>Sim! Entre em contato pelo WhatsApp ou formulário e um de nossos especialistas retornará em até 24 horas com o orçamento sem compromisso.</p></div>
+    </div>
+    <div class="faq-item reveal">
+      <div class="faq-question">Qual o prazo de entrega dos projetos?<span class="arrow"></span></div>
+      <div class="faq-answer"><p>O prazo varia conforme a complexidade, mas projetos simples ficam prontos em 5 a 10 dias úteis. Informamos o prazo exato na proposta.</p></div>
+    </div>
+    <div class="faq-item reveal">
+      <div class="faq-question">Trabalham com alumínio sob medida?<span class="arrow"></span></div>
+      <div class="faq-answer"><p>Sim, todos os nossos produtos são fabricados sob medida de acordo com as necessidades e especificações do cliente.</p></div>
+    </div>
+    <div class="faq-item reveal">
+      <div class="faq-question">Atendem em toda São Paulo?<span class="arrow"></span></div>
+      <div class="faq-answer"><p>Atendemos Itaquera e toda a Zona Leste. Para outros bairros, consulte disponibilidade pelo WhatsApp.</p></div>
+    </div>
+    <div class="faq-item reveal">
+      <div class="faq-question">Qual a garantia dos produtos?<span class="arrow"></span></div>
+      <div class="faq-answer"><p>Oferecemos garantia de 1 ano em mão de obra e seguimos as garantias dos fabricantes para os materiais.</p></div>
+    </div>
+    <div class="faq-item reveal">
+      <div class="faq-question">Fazem instalação?<span class="arrow"></span></div>
+      <div class="faq-answer"><p>Sim, realizamos a fabricação e a instalação completa. Não precisa contratar terceiros.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== CONTATO + MAPA ========== -->
+<section class="contato" id="contato">
+  <h2 class="section-title reveal">Entre em <span>Contato</span></h2>
+  <p class="section-subtitle reveal">Solicite seu orçamento sem compromisso</p>
+  <div class="contato-grid">
+    <form class="form-contato reveal reveal-left" id="formContato" onsubmit="enviarWhatsApp(event)">
+      <div class="form-group">
+        <label for="nome">Nome Completo</label>
+        <input type="text" id="nome" required placeholder="Seu nome">
+      </div>
+      <div class="form-group">
+        <label for="telefone">Telefone</label>
+        <input type="tel" id="telefone" required placeholder="(11) 99999-9999">
+      </div>
+      <div class="form-group">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" required placeholder="seu@email.com">
+      </div>
+      <div class="form-group">
+        <label for="servico">Serviço Desejado</label>
+        <select id="servico" required>
+          <option value="">Selecione um serviço</option>
+          <option>Gabinete de Alumínio</option>
+          <option>Fechamento de Pia</option>
+          <option>Portas de Alumínio</option>
+          <option>Janelas de Alumínio</option>
+          <option>Portões de Alumínio</option>
+          <option>Vidraçaria</option>
+          <option>Box de Vidro</option>
+          <option>Grades e Corrimões</option>
+          <option>Fechamento de Sacadas</option>
+          <option>Expositores</option>
+          <option>Outro</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" placeholder="Detalhes do seu projeto..."></textarea>
+      </div>
+      <button type="submit" class="btn-form">Enviar via WhatsApp</button>
+    </form>
+    <div class="info-contato reveal reveal-right">
+      <div class="info-item">
+        <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+        <div>
+          <h4>Endereço</h4>
+          <p>Av. Aiziro Zarur, 808<br>Parque Savoi City – São Paulo/SP</p>
+        </div>
+      </div>
+      <div class="info-item">
+        <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+        <div>
+          <h4>Telefone</h4>
+          <a href="tel:1127427932">(11) 2742-7932</a>
+        </div>
+      </div>
+      <div class="info-item">
+        <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        <div>
+          <h4>E-mail</h4>
+          <a href="/cdn-cgi/l/email-protection#c0a3afada5b2a3a9a1ac80b3b4b9acafa1b2b4a5eea3afadeea2b2"><span class="__cf_email__" data-cfemail="c8aba7a5adbaaba1a9a488bbbcb1a4a7a9babcade6aba7a5e6aaba">[email&#160;protected]</span></a>
+        </div>
+      </div>
+      <div class="info-item">
+        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+        <div>
+          <h4>Horário de Atendimento</h4>
+          <p>Seg-Sex: 8h às 18h<br>Sáb: 8h às 13h</p>
+        </div>
+      </div>
+      <div class="mapa-container">
+        <iframe src="https://maps.google.com/maps?q=Av.+Aiziro+Zarur,+808,+S%C3%A3o+Paulo&output=embed" loading="lazy" title="Localização Stylo Arte"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer class="footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <img src="logo-styloarte.png" alt="Stylo Arte" style="height: 50px; width: auto; margin-bottom: 12px; display: block;">
+      <p>Serralheria e Vidraçaria<br>Av. Aiziro Zarur, 808<br>Itaquera, São Paulo – SP<br><br>28 anos transformando projetos em realidade.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Serviços</h4>
+      <ul>
+        <li><a href="#galeria">Serralheria</a></li>
+        <li><a href="#galeria">Vidraçaria</a></li>
+        <li><a href="#galeria">Box de Vidro</a></li>
+        <li><a href="#galeria">Expositores</a></li>
+        <li><a href="#galeria">Galeria</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Atendimento</h4>
+      <ul>
+        <li><a href="tel:1127427932">(11) 2742-7932</a></li>
+        <li><a href="/cdn-cgi/l/email-protection#5734383a3225343e363b1724232e3b38362523327934383a793525"><span class="__cf_email__" data-cfemail="74171b191106171d15183407000d181b150600115a171b195a1606">[email&#160;protected]</span></a></li>
+        <li>Seg-Sex: 8h às 18h</li>
+        <li>Sáb: 8h às 13h</li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Redes Sociais</h4>
+      <div class="social-icons">
+        <a href="javascript:void(0)" id="btnFacebook" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+        <a href="javascript:void(0)" id="btnInstagram" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+        <a href="https://wa.me/5511995345603" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© <span id="year"></span> Stylo Arte — Todos os direitos reservados</p>
+    <p>
+      <a href="#" data-modal="privacidade">Política de Privacidade</a> |
+      <a href="#" data-modal="termos">Termos de Uso</a> |
+      <a href="#" data-modal="cookies">Cookies</a>
+    </p>
+    <div class="dev-credit">
+      Desenvolvido por <strong>João Roberto</strong>
+      <div class="dev-social-icons">
+        <a href="https://www.instagram.com/jrdev.ia" target="_blank" aria-label="Instagram do desenvolvedor" class="dev-social-link dev-ig">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+        </a>
+        <a href="https://wa.me/5511948135491" target="_blank" aria-label="WhatsApp do desenvolvedor" class="dev-social-link dev-wpp">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ========== WHATSAPP FLUTUANTE — CHAMA NO WHATS ========== -->
+<div class="wpp-float-container" id="wppFloat">
+  <a href="https://wa.me/5511995345603?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20orçamento." target="_blank" class="wpp-float-btn" aria-label="Chama no WhatsApp">
+    <div class="wpp-float-text">Chama no Whats</div>
+    <div class="wpp-float-icon">
+      <svg viewBox="0 0 24 24" fill="white" width="28" height="28"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </div>
+  </a>
+</div>
+
+<!-- ========== MODAL FACEBOOK ========== -->
+<div class="fb-modal-overlay" id="fbModal">
+  <div class="fb-modal-box">
+    <div class="fb-modal-header">
+      <div class="fb-modal-title">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="#1877f2"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        Styloarte no Facebook
+      </div>
+      <button class="fb-modal-close" id="fbModalClose" aria-label="Fechar">✕</button>
+    </div>
+    <div class="fb-modal-body">
+      <iframe
+        src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fp%2FStyloarte-serralheria-vidra%25C3%25A7aria-100063577813255%2F&tabs=timeline&width=380&height=600&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+        width="100%"
+        height="600"
+        style="border:none;overflow:hidden"
+        scrolling="yes"
+        frameborder="0"
+        allowfullscreen="true"
+        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+        title="Página do Facebook Styloarte"
+      ></iframe>
+    </div>
+  </div>
+</div>
+
+<!-- ========== MODAL INSTAGRAM ========== -->
+<div class="ig-modal-overlay" id="igModal">
+  <div class="ig-modal-box">
+    <div class="ig-modal-header">
+      <div class="ig-modal-title">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="white"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+        Styloarte no Instagram
+      </div>
+      <button class="ig-modal-close" id="igModalClose">✕</button>
+    </div>
+    <div class="ig-modal-body">
+      <div class="ig-modal-avatar">
+        <img src="logo-styloarte.png" alt="Stylo Arte" onerror="this.style.background='linear-gradient(135deg,#833ab4,#fd1d1d)'">
+      </div>
+      <div class="ig-modal-handle">@_styloarte</div>
+      <div class="ig-modal-desc">Serralheria e Vidraçaria em Itaquera – SP 🪟<br>Alumínio · Vidro · Box · Portões · 28 anos de experiência</div>
+      <a href="https://www.instagram.com/_styloarte" target="_blank" class="ig-modal-btn">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="white"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+        Ver no Instagram
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ========== MODAL POLÍTICA DE PRIVACIDADE ========== -->
+<div class="legal-modal-overlay" id="modalPrivacidade">
+  <div class="legal-modal-box">
+    <div class="legal-modal-header">
+      <h3>Política de Privacidade</h3>
+      <button class="legal-modal-close" onclick="document.getElementById('modalPrivacidade').classList.remove('active')">✕</button>
+    </div>
+    <div class="legal-modal-body">
+      <p>A <strong>Stylo Arte Serralheria e Vidraçaria</strong> valoriza a privacidade de seus clientes e está em conformidade com a Lei Geral de Proteção de Dados (LGPD - Lei nº 13.709/2018).</p>
+      <h4>1. Coleta de Dados</h4>
+      <p>Coletamos apenas os dados necessários (nome, telefone, e-mail e mensagem) para fornecer orçamentos e atender solicitações. Os dados são fornecidos voluntariamente pelo cliente.</p>
+      <h4>2. Uso dos Dados</h4>
+      <p>Os dados são utilizados exclusivamente para responder solicitações de orçamento e comunicação sobre serviços. Não compartilhamos dados com terceiros para fins comerciais.</p>
+      <h4>3. Armazenamento</h4>
+      <p>Os dados são armazenados de forma segura pelo tempo necessário ao cumprimento das finalidades, ou conforme exigências legais.</p>
+      <h4>4. Direitos do Titular</h4>
+      <p>Você pode solicitar acesso, correção, exclusão ou portabilidade dos seus dados pelo e-mail <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="0c6f6361697e6f656d604c7f787560636d7e7869226f6361226e7e">[email&#160;protected]</a>.</p>
+      <h4>5. Contato</h4>
+      <p>Dúvidas: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="75161a181007161c14193506010c191a140701105b161a185b1707">[email&#160;protected]</a> | (11) 2742-7932</p>
+    </div>
+  </div>
+</div>
+
+<!-- ========== MODAL TERMOS DE USO ========== -->
+<div class="legal-modal-overlay" id="modalTermos">
+  <div class="legal-modal-box">
+    <div class="legal-modal-header">
+      <h3>Termos de Uso</h3>
+      <button class="legal-modal-close" onclick="document.getElementById('modalTermos').classList.remove('active')">✕</button>
+    </div>
+    <div class="legal-modal-body">
+      <p>Ao utilizar o site <strong>styloarteserralheria.com.br</strong>, você concorda com os termos abaixo.</p>
+      <h4>1. Uso do Site</h4>
+      <p>Este site destina-se exclusivamente à apresentação de serviços e ao contato com clientes. É proibido utilizar as informações aqui disponibilizadas para fins ilícitos.</p>
+      <h4>2. Conteúdo</h4>
+      <p>Todos os textos, imagens e elementos visuais são propriedade da Stylo Arte e protegidos por direitos autorais. Reprodução sem autorização é proibida.</p>
+      <h4>3. Responsabilidade</h4>
+      <p>A Stylo Arte não se responsabiliza por danos decorrentes do uso indevido do site ou de informações desatualizadas.</p>
+      <h4>4. Foro</h4>
+      <p>Fica eleito o foro da Comarca de São Paulo/SP para dirimir eventuais litígios.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ========== MODAL COOKIES ========== -->
+<div class="legal-modal-overlay" id="modalCookies">
+  <div class="legal-modal-box">
+    <div class="legal-modal-header">
+      <h3>Política de Cookies</h3>
+      <button class="legal-modal-close" onclick="document.getElementById('modalCookies').classList.remove('active')">✕</button>
+    </div>
+    <div class="legal-modal-body">
+      <p>Este site utiliza cookies para melhorar sua experiência de navegação.</p>
+      <h4>O que são Cookies?</h4>
+      <p>Cookies são pequenos arquivos de texto armazenados no seu dispositivo pelo navegador para lembrar suas preferências.</p>
+      <h4>Cookies Essenciais</h4>
+      <p>Necessários para o funcionamento básico do site. Não podem ser desativados.</p>
+      <h4>Cookies de Análise</h4>
+      <p>Utilizados via Google Analytics para entender como os visitantes usam o site. Os dados são anonimizados.</p>
+      <h4>Gerenciamento</h4>
+      <p>Você pode desativar cookies nas configurações do seu navegador, mas isso pode afetar a experiência no site.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ========== JAVASCRIPT ========== -->
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+/* ========== ANO DINÂMICO ========== */
+document.getElementById('year').textContent = new Date().getFullYear();
+
+/* ========== NAVBAR SCROLL ========== */
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+  navbar.classList.toggle('scrolled', window.scrollY > 50);
+});
+
+/* ========== HAMBÚRGUER MOBILE ========== */
+const hamburger = document.getElementById('hamburger');
+const mobileOverlay = document.getElementById('mobileOverlay');
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('active');
+  mobileOverlay.classList.toggle('active');
+});
+document.querySelectorAll('.mobile-link').forEach(link => {
+  link.addEventListener('click', () => {
+    hamburger.classList.remove('active');
+    mobileOverlay.classList.remove('active');
+  });
+});
+
+/* ========== TYPEWRITER HERO ========== */
+const heroTitle = document.getElementById('heroTitle');
+const text = 'STYLO ARTE';
+let i = 0;
+function typeWriter() {
+  if (i < text.length) {
+    heroTitle.textContent += text.charAt(i);
+    i++;
+    setTimeout(typeWriter, 150);
+  } else {
+    heroTitle.classList.add('done');
+  }
+}
+setTimeout(typeWriter, 1800);
+
+/* ========== PARALLAX HERO ========== */
+const heroBg = document.getElementById('heroBg');
+window.addEventListener('scroll', () => {
+  const scrolled = window.scrollY;
+  if (scrolled < window.innerHeight) {
+    heroBg.style.transform = `translateY(${scrolled * 0.5}px)`;
+  }
+});
+
+/* ========== PARTÍCULAS AZUIS ========== */
+const canvas = document.getElementById('particles-canvas');
+const ctx = canvas.getContext('2d');
+let particles = [];
+
+function resizeCanvas() {
+  canvas.width = canvas.offsetWidth;
+  canvas.height = canvas.offsetHeight;
+}
+resizeCanvas();
+window.addEventListener('resize', resizeCanvas);
+
+class Particle {
+  constructor() {
+    this.x = Math.random() * canvas.width;
+    this.y = Math.random() * canvas.height;
+    this.size = Math.random() * 2 + 0.5;
+    this.speedY = -Math.random() * 0.5 - 0.2;
+    this.speedX = (Math.random() - 0.5) * 0.3;
+    this.opacity = Math.random() * 0.6 + 0.2;
+  }
+  update() {
+    this.y += this.speedY;
+    this.x += this.speedX;
+    if (this.y < 0) {
+      this.y = canvas.height;
+      this.x = Math.random() * canvas.width;
+    }
+  }
+  draw() {
+    ctx.beginPath();
+    ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+    ctx.fillStyle = `rgba(41, 82, 163, ${this.opacity})`;
+    ctx.shadowBlur = 10;
+    ctx.shadowColor = '#2952a3';
+    ctx.fill();
+  }
+}
+for (let i = 0; i < 80; i++) particles.push(new Particle());
+function animateParticles() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  particles.forEach(p => { p.update(); p.draw(); });
+  requestAnimationFrame(animateParticles);
+}
+animateParticles();
+
+/* ========== SCROLL REVEAL (Intersection Observer) ========== */
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.15 });
+document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+/* ========== CONTADORES ANIMADOS ========== */
+const counterObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const el = entry.target;
+      const target = +el.getAttribute('data-target');
+      let count = 0;
+      const step = target / 60;
+      const update = () => {
+        count += step;
+        if (count < target) {
+          el.textContent = Math.ceil(count);
+          requestAnimationFrame(update);
+        } else {
+          el.textContent = target;
+        }
+      };
+      update();
+      counterObserver.unobserve(el);
+    }
+  });
+}, { threshold: 0.5 });
+document.querySelectorAll('.counter-number[data-target]').forEach(el => counterObserver.observe(el));
+
+/* ========== GALERIA — DADOS E SLIDESHOWS ========== */
+const galerias = [
+  { titulo: 'Gabinete de Alumínio', fotos: ['FOTO_GABINETE_1.jpg','FOTO_GABINETE_2.jpg','FOTO_GABINETE_3.jpg','FOTO_GABINETE_4.jpg'] },
+  { titulo: 'Fechamento de Pia', fotos: ['FOTO_PIA_1.jpg','FOTO_PIA_2.jpg','FOTO_PIA_3.jpg','FOTO_PIA_4.jpg'] },
+  { titulo: 'Portas de Alumínio', fotos: ['FOTO_PORTA_ALU_1.jpg','FOTO_PORTA_ALU_2.jpg','FOTO_PORTA_ALU_3.jpg'] },
+  { titulo: 'Janelas de Alumínio', fotos: ['FOTO_JANELA_1.jpg','FOTO_JANELA_2.jpg','FOTO_JANELA_3.jpg'] },
+  { titulo: 'Portões de Alumínio', fotos: ['FOTO_PORTAO_ALU_1.jpg','FOTO_PORTAO_ALU_2.jpg','FOTO_PORTAO_ALU_3.jpg'] },
+  { titulo: 'Vidraçaria', fotos: ['FOTO_VIDRACARIA_1.jpg','FOTO_VIDRACARIA_2.jpg','FOTO_VIDRACARIA_3.jpg'] },
+  { titulo: 'Box de Vidro', fotos: ['FOTO_BOX_1.jpg','FOTO_BOX_2.jpg','FOTO_BOX_3.jpg'] },
+  { titulo: 'Grades e Corrimões', fotos: ['FOTO_GRADE_1.jpg','FOTO_GRADE_2.jpg','FOTO_GRADE_3.jpg'] },
+  { titulo: 'Fechamento de Sacadas', fotos: ['FOTO_SACADA_1.jpg','FOTO_SACADA_2.jpg','FOTO_SACADA_3.jpg'] },
+  { titulo: 'Expositores', fotos: ['FOTO_EXPOSITOR_1.jpg','FOTO_EXPOSITOR_2.jpg','FOTO_EXPOSITOR_3.jpg'] }
+];
+
+const galeriaGrid = document.getElementById('galeriaGrid');
+galerias.forEach((g, idx) => {
+  const card = document.createElement('div');
+  card.className = 'galeria-card reveal';
+  if (idx % 4 === 1) card.classList.add('delay-1');
+  if (idx % 4 === 2) card.classList.add('delay-2');
+  if (idx % 4 === 3) card.classList.add('delay-3');
+
+  const slidesHTML = g.fotos.map((f, i) => `
+    <div class="slide ${i===0?'active':''}" data-index="${i}">
+      <div class="placeholder" alt="${g.titulo} ${i+1}">
+        <span>📷 ${f}</span>
+      </div>
+    </div>
+  `).join('');
+
+  const dotsHTML = g.fotos.map((_, i) => `<div class="dot ${i===0?'active':''}" data-index="${i}"></div>`).join('');
+
+  const msg = encodeURIComponent(`Olá! Gostaria de um orçamento para ${g.titulo}.`);
+
+  card.innerHTML = `
+    <div class="galeria-card-header">${g.titulo}</div>
+    <div class="slideshow">
+      ${slidesHTML}
+      <div class="slideshow-dots">${dotsHTML}</div>
+    </div>
+    <div class="galeria-card-footer">
+      <a href="https://wa.me/5511995345603?text=${msg}" target="_blank" class="btn-orcamento">Solicitar Orçamento</a>
+    </div>
+  `;
+  galeriaGrid.appendChild(card);
+
+  // Slideshow automático
+  let currentSlide = 0;
+  const slides = card.querySelectorAll('.slide');
+  const dots = card.querySelectorAll('.dot');
+  setInterval(() => {
+    slides[currentSlide].classList.remove('active');
+    dots[currentSlide].classList.remove('active');
+    currentSlide = (currentSlide + 1) % slides.length;
+    slides[currentSlide].classList.add('active');
+    dots[currentSlide].classList.add('active');
+  }, 3000);
+});
+
+// Re-observa cards de galeria criados dinamicamente
+document.querySelectorAll('.galeria-card.reveal').forEach(el => revealObserver.observe(el));
+
+/* ========== DEPOIMENTOS ESTEIRA ========== */
+const depoimentos = [
+  { texto: 'Excelente trabalho, portas de alumínio perfeitas!', autor: 'João S.' },
+  { texto: 'Profissionais sérios e pontuais. Recomendo muito!', autor: 'Maria L.' },
+  { texto: 'Box de vidro impecável, atendimento nota 10.', autor: 'Carlos R.' },
+  { texto: 'Janelas de alumínio de ótima qualidade, prazo cumprido!', autor: 'Ana P.' },
+  { texto: 'Melhor empresa de serralheria da zona leste!', autor: 'Roberto M.' }
+];
+const esteira = document.getElementById('esteira');
+const depHTML = depoimentos.map(d => `
+  <div class="depoimento-card">
+    <div class="stars">★ ★ ★ ★ ★</div>
+    <p class="depoimento-text">"${d.texto}"</p>
+    <p class="depoimento-autor">— ${d.autor}</p>
+  </div>
+`).join('');
+// Duplica para loop infinito perfeito
+esteira.innerHTML = depHTML + depHTML;
+
+/* ========== FAQ ACORDEÕES ========== */
+document.querySelectorAll('.faq-question').forEach(q => {
+  q.addEventListener('click', () => {
+    const item = q.parentElement;
+    item.classList.toggle('active');
+  });
+});
+
+/* ========== FORMULÁRIO → WHATSAPP ========== */
+function enviarWhatsApp(e) {
+  e.preventDefault();
+  const nome = document.getElementById('nome').value;
+  const tel = document.getElementById('telefone').value;
+  const email = document.getElementById('email').value;
+  const servico = document.getElementById('servico').value;
+  const msg = document.getElementById('mensagem').value;
+
+  const texto = `Olá! Vim pelo site Stylo Arte e gostaria de um orçamento.%0A%0A*Nome:* ${nome}%0A*Telefone:* ${tel}%0A*E-mail:* ${email}%0A*Serviço:* ${servico}%0A*Mensagem:* ${msg}`;
+  window.open(`https://wa.me/5511995345603?text=${texto}`, '_blank');
+}
+
+/* ========== MODAL FACEBOOK ========== */
+const fbModal = document.getElementById('fbModal');
+const btnFb = document.getElementById('btnFacebook');
+const fbClose = document.getElementById('fbModalClose');
+if (btnFb) btnFb.addEventListener('click', (e) => { e.preventDefault(); fbModal.classList.add('active'); });
+if (fbClose) fbClose.addEventListener('click', () => fbModal.classList.remove('active'));
+fbModal.addEventListener('click', (e) => { if (e.target === fbModal) fbModal.classList.remove('active'); });
+
+/* ========== MODAL INSTAGRAM ========== */
+const igModal = document.getElementById('igModal');
+const btnIg = document.getElementById('btnInstagram');
+const igClose = document.getElementById('igModalClose');
+if (btnIg) btnIg.addEventListener('click', (e) => { e.preventDefault(); igModal.classList.add('active'); });
+if (igClose) igClose.addEventListener('click', () => igModal.classList.remove('active'));
+igModal.addEventListener('click', (e) => { if (e.target === igModal) igModal.classList.remove('active'); });
+
+/* ========== MODAIS LEGAIS (PRIVACIDADE / TERMOS / COOKIES) ========== */
+document.querySelector('a[data-modal="privacidade"]')?.addEventListener('click', (e) => {
+  e.preventDefault();
+  document.getElementById('modalPrivacidade').classList.add('active');
+});
+document.querySelector('a[data-modal="termos"]')?.addEventListener('click', (e) => {
+  e.preventDefault();
+  document.getElementById('modalTermos').classList.add('active');
+});
+document.querySelector('a[data-modal="cookies"]')?.addEventListener('click', (e) => {
+  e.preventDefault();
+  document.getElementById('modalCookies').classList.add('active');
+});
+document.querySelectorAll('.legal-modal-overlay').forEach(overlay => {
+  overlay.addEventListener('click', (e) => {
+    if (e.target === overlay) overlay.classList.remove('active');
+  });
+});
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    document.querySelectorAll('.legal-modal-overlay.active').forEach(m => m.classList.remove('active'));
+    fbModal.classList.remove('active');
+    igModal.classList.remove('active');
+  }
+});
+</script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4edd5f8ec12a48cfa682ab8261b80a79","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>
