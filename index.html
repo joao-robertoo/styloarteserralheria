@@ -12,6 +12,11 @@
 <meta name="author" content="Stylo Arte">
 <link rel="canonical" href="https://www.styloarteserralheria.com.br">
 
+<!-- ✅ ADICIONE AQUI -->
+<link rel="icon" type="image/webp" href="favicon.webp">
+<link rel="shortcut icon" href="favicon.webp">
+<link rel="apple-touch-icon" href="favicon.webp">
+
 <!-- Open Graph -->
 <meta property="og:title" content="Stylo Arte | Serralheria e Vidraçaria em Itaquera SP">
 <meta property="og:description" content="28 anos de experiência em esquadrias de alumínio e vidraçaria. Qualidade, pontualidade e garantia.">
@@ -31,7 +36,7 @@
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "name": "Stylo Arte Serralheria e Vidraçaria",
-  "image": "https://www.styloarteserralheria.com.br/logo-styloarte.png",
+  "image": "https://www.styloarteserralheria.com.br/logo-styloarte.webp",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Av. Alziro Zarur, 808",
@@ -340,24 +345,14 @@ body::before {
 .hero-bg {
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, #0f2444 0%, #1a3a6b 50%, #0f2444 100%);
+  background: url('hero-principal.webp') center center / cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 1;
   will-change: transform;
 }
-.hero-bg::before {
-  content: '📷 FOTO_HERO_PRINCIPAL.jpg';
-  color: #f1c40f;
-  font-weight: bold;
-  font-size: 1rem;
-  letter-spacing: 2px;
-  border: 1px dashed #f1c40f;
-  padding: 15px 25px;
-  border-radius: 8px;
-  opacity: 0.6;
-}
+
 .hero-bg::after {
   content: '';
   position: absolute;
@@ -382,20 +377,25 @@ body::before {
   padding: 0 20px;
   max-width: 1100px;
 }
+
 .hero-title {
   font-family: var(--font-title);
-  font-size: clamp(3rem, 9vw, 7rem);
+  font-size: clamp(3.5rem, 9vw, 7.5rem);
   font-weight: 900;
-  letter-spacing: 6px;
-  background: linear-gradient(135deg, #ffffff, #c8d6e5, #ffffff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  margin-bottom: 25px;
-  text-shadow: 0 0 60px rgba(41, 82, 163, 0.5);
+  letter-spacing: 10px;
+  color: #ffffff;
+  text-shadow:
+    0 2px 4px rgba(0,0,0,0.9),
+    0 4px 30px rgba(0,0,0,0.7),
+    0 0 80px rgba(0,0,0,0.5);
+  margin-bottom: 30px;
   position: relative;
   display: inline-block;
+  -webkit-text-fill-color: unset;
+  background: none;
+  text-transform: uppercase;
 }
+
 .hero-title::after {
   content: '|';
   -webkit-text-fill-color: var(--accent);
@@ -408,14 +408,23 @@ body::before {
 }
 
 .hero-subtitle {
-  font-size: clamp(1rem, 2vw, 1.3rem);
-  color: rgba(255,255,255,0.85);
+  font-size: clamp(0.95rem, 1.8vw, 1.2rem);
+  color: #ffffff;
   margin-bottom: 50px;
-  letter-spacing: 2px;
-  font-weight: 300;
+  letter-spacing: 4px;
+  font-weight: 400;
+  text-transform: uppercase;
   opacity: 0;
   animation: fadeInUp 1s ease 2.5s forwards;
+  text-shadow: 0 2px 15px rgba(0,0,0,0.95), 0 1px 3px rgba(0,0,0,1);
+  background: rgba(0,0,0,0.25);
+  padding: 12px 28px;
+  border-radius: 2px;
+  border-left: 3px solid rgba(255,255,255,0.6);
+  display: inline-block;
+  backdrop-filter: blur(4px);
 }
+
 @keyframes fadeInUp {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
@@ -670,7 +679,7 @@ section {
 .slideshow {
   position: relative;
   width: 100%;
-  height: 220px;
+  height: 340px;
   overflow: hidden;
 }
 .slide {
@@ -680,16 +689,44 @@ section {
   transition: opacity 1s ease;
 }
 .slide.active { opacity: 1; }
+
+/* ── Slide imagens reais ── */
+.slide-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s ease;
+  border-radius: 0;
+}
+.galeria-card:hover .slide-img {
+  transform: scale(1.05);
+}
+
 .slide .placeholder {
   background: #e8ecf3;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 220px;
+  height: 340px;
   transition: var(--transition);
 }
-.galeria-card:hover .slide .placeholder { transform: scale(1.05); }
+.galeria-card:hover 
+/* ── Slide imagens reais ── */
+.slide-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s ease;
+  border-radius: 0;
+}
+.galeria-card:hover .slide-img {
+  transform: scale(1.05);
+}
+
+.slide .placeholder { transform: scale(1.05); }
 .slide .placeholder span {
   color: #d4a300;
   background: rgba(255,255,255,0.85);
@@ -796,10 +833,15 @@ section {
   color: var(--gray-text);
   margin: 0;
 }
+
 .sobre-img {
   width: 100%;
   height: 480px;
-  background: #e8ecf3;
+  background-image: url('imagens/empresa/fachada.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #f0f2f7;
   border-radius: 12px;
   display: flex;
   align-items: center;
@@ -809,8 +851,8 @@ section {
   overflow: hidden;
   box-shadow: 0 4px 25px rgba(26,58,107,0.12);
 }
+
 .sobre-img::before {
-  content: '📷 FOTO_EMPRESA_FACHADA.jpg';
   color: #d4a300;
   background: rgba(255,255,255,0.85);
   font-weight: bold;
@@ -1094,6 +1136,9 @@ section {
   display: flex;
   gap: 15px;
   margin-top: 15px;
+}
+.footer-col {
+    color: rgba(255,255,255,0.6);
 }
 .social-icons a {
   width: 40px;
@@ -1500,6 +1545,10 @@ section {
 </head>
 <body>
 
+<h1 style="position:absolute;width:1px;height:1px;overflow:hidden;opacity:0">
+  Stylo Arte — Serralheria e Vidraçaria em Itaquera SP | 28 Anos
+</h1>
+
 <!-- ========== TOP BANNER ANIMADO ========== -->
 <div class="top-banner" id="topBanner">
   <div class="banner-track">
@@ -1563,7 +1612,7 @@ section {
 <!-- ========== NAVBAR ========== -->
 <nav class="navbar" id="navbar">
   <a href="#inicio" class="nav-logo">
-    <img src="logo-styloarte.png" alt="Stylo Arte" style="height: 38px; width: auto; display: block;">
+    <img src="logo-styloarte.webp" alt="Stylo Arte" style="height: 38px; width: auto; display: block;">
   </a>
   <ul class="nav-menu">
     <li><a href="#inicio">Início</a></li>
@@ -1705,7 +1754,7 @@ section {
           <p>Mais de 300 projetos entregues em toda a Grande São Paulo.</p>
         </div>
         <div class="timeline-item">
-          <h4>2024 — Hoje</h4>
+          <h4>2026 — Hoje</h4>
           <p>Mais de 500 clientes satisfeitos e referência consolidada na região.</p>
         </div>
       </div>
@@ -1808,14 +1857,14 @@ section {
         <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
         <div>
           <h4>Telefone</h4>
-          <a href="tel:1127427932">(11) 2742-7932</a>
+          <a href="tel:11995345603">(11) 99534-5603</a>
         </div>
       </div>
       <div class="info-item">
         <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
         <div>
           <h4>E-mail</h4>
-          <a href="/cdn-cgi/l/email-protection#c0a3afada5b2a3a9a1ac80b3b4b9acafa1b2b4a5eea3afadeea2b2"><span class="__cf_email__" data-cfemail="c8aba7a5adbaaba1a9a488bbbcb1a4a7a9babcade6aba7a5e6aaba">[email&#160;protected]</span></a>
+          <a href="/cdn-cgi/l/email-protection#c0a3afada5b2a3a9a1ac80b3b4b9acafa1b2b4a5eea3afadeea2b2"><span class="__cf_email__" data-cfemail="c8aba7a5adbaaba1a9a488bbbcb1a4a7a9babcade6aba7a5e6aaba">stylo.arte@uol.com.br</span></a>
         </div>
       </div>
       <div class="info-item">
@@ -1836,7 +1885,7 @@ section {
 <footer class="footer">
   <div class="footer-grid">
     <div class="footer-brand">
-      <img src="logo-styloarte.png" alt="Stylo Arte" style="height: 50px; width: auto; margin-bottom: 12px; display: block;">
+      <img src="logo-styloarte.webp" alt="Stylo Arte" style="height: 50px; width: auto; margin-bottom: 12px; display: block;">
       <p>Serralheria e Vidraçaria<br>Av. Aiziro Zarur, 808<br>Itaquera, São Paulo – SP<br><br>28 anos transformando projetos em realidade.</p>
     </div>
     <div class="footer-col">
@@ -1852,8 +1901,9 @@ section {
     <div class="footer-col">
       <h4>Atendimento</h4>
       <ul>
-        <li><a href="tel:1127427932">(11) 2742-7932</a></li>
-        <li><a href="/cdn-cgi/l/email-protection#5734383a3225343e363b1724232e3b38362523327934383a793525"><span class="__cf_email__" data-cfemail="74171b191106171d15183407000d181b150600115a171b195a1606">[email&#160;protected]</span></a></li>
+        <li><a href="tel:1127427932">(11) 2217-7148</a></li>
+        <li><a href="tel:11995345603">(11) 99534-5603</a></li>
+        <li><a href="/cdn-cgi/l/email-protection#5734383a3225343e363b1724232e3b38362523327934383a793525"><span class="__cf_email__" data-cfemail="74171b191106171d15183407000d181b150600115a171b195a1606">stylo.arte@uol.com.br</span></a></li>
         <li>Seg-Sex: 8h às 18h</li>
         <li>Sáb: 8h às 13h</li>
       </ul>
@@ -1936,7 +1986,7 @@ section {
     </div>
     <div class="ig-modal-body">
       <div class="ig-modal-avatar">
-        <img src="logo-styloarte.png" alt="Stylo Arte" onerror="this.style.background='linear-gradient(135deg,#833ab4,#fd1d1d)'">
+        <img src="logo-styloarte.webp" alt="Stylo Arte" onerror="this.style.background='linear-gradient(135deg,#833ab4,#fd1d1d)'">
       </div>
       <div class="ig-modal-handle">@_styloarte</div>
       <div class="ig-modal-desc">Serralheria e Vidraçaria em Itaquera – SP 🪟<br>Alumínio · Vidro · Box · Portões · 28 anos de experiência</div>
@@ -1964,9 +2014,9 @@ section {
       <h4>3. Armazenamento</h4>
       <p>Os dados são armazenados de forma segura pelo tempo necessário ao cumprimento das finalidades, ou conforme exigências legais.</p>
       <h4>4. Direitos do Titular</h4>
-      <p>Você pode solicitar acesso, correção, exclusão ou portabilidade dos seus dados pelo e-mail <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="0c6f6361697e6f656d604c7f787560636d7e7869226f6361226e7e">[email&#160;protected]</a>.</p>
+      <p>Você pode solicitar acesso, correção, exclusão ou portabilidade dos seus dados pelo e-mail <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="0c6f6361697e6f656d604c7f787560636d7e7869226f6361226e7e">stylo.arte@uol.com.br</a>.</p>
       <h4>5. Contato</h4>
-      <p>Dúvidas: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="75161a181007161c14193506010c191a140701105b161a185b1707">[email&#160;protected]</a> | (11) 2742-7932</p>
+      <p>Dúvidas: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="75161a181007161c14193506010c191a140701105b161a185b1707">stylo.arte@uol.com.br</a> | (11) 2217-7148</p>
     </div>
   </div>
 </div>
@@ -2118,6 +2168,12 @@ const revealObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.15 });
 document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 
+window.addEventListener('load', () => {
+  document.querySelectorAll('.reveal').forEach(el => {
+    el.classList.add('visible');
+  });
+});
+
 /* ========== CONTADORES ANIMADOS ========== */
 const counterObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
@@ -2144,16 +2200,27 @@ document.querySelectorAll('.counter-number[data-target]').forEach(el => counterO
 
 /* ========== GALERIA — DADOS E SLIDESHOWS ========== */
 const galerias = [
-  { titulo: 'Gabinete de Alumínio', fotos: ['FOTO_GABINETE_1.jpg','FOTO_GABINETE_2.jpg','FOTO_GABINETE_3.jpg','FOTO_GABINETE_4.jpg'] },
-  { titulo: 'Fechamento de Pia', fotos: ['FOTO_PIA_1.jpg','FOTO_PIA_2.jpg','FOTO_PIA_3.jpg','FOTO_PIA_4.jpg'] },
-  { titulo: 'Portas de Alumínio', fotos: ['FOTO_PORTA_ALU_1.jpg','FOTO_PORTA_ALU_2.jpg','FOTO_PORTA_ALU_3.jpg'] },
-  { titulo: 'Janelas de Alumínio', fotos: ['FOTO_JANELA_1.jpg','FOTO_JANELA_2.jpg','FOTO_JANELA_3.jpg'] },
-  { titulo: 'Portões de Alumínio', fotos: ['FOTO_PORTAO_ALU_1.jpg','FOTO_PORTAO_ALU_2.jpg','FOTO_PORTAO_ALU_3.jpg'] },
-  { titulo: 'Vidraçaria', fotos: ['FOTO_VIDRACARIA_1.jpg','FOTO_VIDRACARIA_2.jpg','FOTO_VIDRACARIA_3.jpg'] },
-  { titulo: 'Box de Vidro', fotos: ['FOTO_BOX_1.jpg','FOTO_BOX_2.jpg','FOTO_BOX_3.jpg'] },
-  { titulo: 'Grades e Corrimões', fotos: ['FOTO_GRADE_1.jpg','FOTO_GRADE_2.jpg','FOTO_GRADE_3.jpg'] },
-  { titulo: 'Fechamento de Sacadas', fotos: ['FOTO_SACADA_1.jpg','FOTO_SACADA_2.jpg','FOTO_SACADA_3.jpg'] },
-  { titulo: 'Expositores', fotos: ['FOTO_EXPOSITOR_1.jpg','FOTO_EXPOSITOR_2.jpg','FOTO_EXPOSITOR_3.jpg'] }
+
+  { titulo: 'Fechamento de Pia e Escadas',      pasta: 'fechamento-pia-escada',    fotos: ['foto-1.webp','foto-2.webp','foto-3.webp', 'foto-4.webp', 'foto-5.webp', 'foto-6.webp', 'foto-7.webp', 'foto-8.webp', 'foto-9.webp', 'foto-10.webp', 'foto-11.webp', 'foto-12.webp', 'foto-13.webp', 'foto-14.webp', 'foto-15.webp', 'foto-16.webp', 'foto-17.webp', 'foto-18.webp', 'foto-19.webp', 'foto-20.webp', 'foto-21.webp', 'foto-22.webp', 'foto-23.webp', 'foto-24.webp', 'foto-25.webp', 'foto-26.webp', 'foto-27.webp', 'foto-28.webp', 'foto-29.webp',  'foto-30.webp', 'foto-31.webp', 'foto-32.webp', 'foto-33.webp', 'foto-34.webp', 'foto-35.webp', 'foto-36.webp', 'foto-37.webp', 'foto-38.webp'] },
+
+  { titulo: 'Portas de Alumínio',     pasta: 'portas-aluminio',   fotos: ['foto-1.webp','foto-2.webp','foto-3.webp', 'foto-4.webp', 'foto-5.webp', 'foto-6.webp', 'foto-7.webp', 'foto-8.webp', 'foto-9.webp', 'foto-10.webp', 'foto-11.webp', 'foto-12.webp', 'foto-13.webp', 'foto-14.webp', 'foto-15.webp', 'foto-16.webp', 'foto-17.webp', 'foto-18.webp', 'foto-19.webp', 'foto-20.webp', 'foto-21.webp'] },
+
+  { titulo: 'Janelas de Alumínio',    pasta: 'janelas-aluminio',  fotos: ['foto-1.webp','foto-2.webp','foto-3.webp', 'foto-4.webp', 'foto-5.webp', 'foto-6.webp', 'foto-7.webp', 'foto-8.webp', 'foto-9.webp', 'foto-10.webp', 'foto-11.webp', 'foto-12.webp', 'foto-13.webp', 'foto-14.webp', 'foto-15.webp', 'foto-16.webp', 'foto-17.webp'] },
+
+  { titulo: 'Portões de Alumínio',    pasta: 'portoes-aluminio',  fotos: ['foto-1.webp','foto-2.webp','foto-3.webp', 'foto-4.webp', 'foto-5.webp', 'foto-6.webp', 'foto-7.webp', 'foto-8.webp'] },
+
+  { titulo: 'Box de Vidro',           pasta: 'box-vidro',         fotos: ['foto-1.webp','foto-2.webp','foto-3.webp', 'foto-4.webp', 'foto-5.webp', 'foto-6.webp', 'foto-7.webp', 'foto-8.webp', 'foto-9.webp', 'foto-10.webp', 'foto-11.webp', 'foto-12.webp', 'foto-13.webp', 'foto-14.webp', 'foto-15.webp', 'foto-16.webp', 'foto-17.webp', 'foto-18.webp', 'foto-19.webp', 'foto-20.webp', 'foto-21.webp'] },
+
+  { titulo: 'Grades e Corrimões',     pasta: 'grades-corrimoes',  fotos: ['foto-1.webp','foto-2.webp','foto-3.webp', 'foto-4.webp', 'foto-5.webp', 'foto-6.webp', 'foto-7.webp', 'foto-8.webp', 'foto-9.webp', 'foto-10.webp', 'foto-11.webp', 'foto-12.webp', 'foto-13.webp', 'foto-14.webp', 'foto-15.webp', 'foto-16.webp', 'foto-17.webp', 'foto-18.webp', 'foto-19.webp', 'foto-20.webp', 'foto-21.webp', 'foto-22.webp', 'foto-23.webp', 'foto-24.webp', 'foto-25.webp', 'foto-26.webp', 'foto-27.webp', 'foto-28.webp', 'foto-29.webp',  'foto-30.webp', 'foto-31.webp'] },
+
+  { titulo: 'Guarda Corpos',  pasta: 'guarda-corpo',fotos: ['foto-1.webp','foto-2.webp','foto-3.webp', 'foto-4.webp', 'foto-5.webp', 'foto-6.webp', 'foto-7.webp', 'foto-8.webp', 'foto-9.webp', 'foto-10.webp'] },
+
+  { titulo: 'Expositores',            pasta: 'expositores',       fotos: ['foto-1.webp','foto-2.webp','foto-3.webp', 'foto-4.webp', 'foto-5.webp', 'foto-6.webp'] },
+
+  { titulo: 'Porta Camarão',        pasta: 'portas-camarao',     fotos: ['foto-1.webp','foto-2.webp','foto-3.webp', 'foto-4.webp', 'foto-5.webp', 'foto-6.webp', 'foto-7.webp', 'foto-8.webp', 'foto-9.webp', 'foto-10.webp', 'foto-11.webp'] },
+
+  { titulo: 'Telas Mosquiteiros',   pasta: 'telas-mosquiteiros', fotos: ['foto-1.webp','foto-2.webp','foto-3.webp', 'foto-4.webp', 'foto-5.webp', 'foto-6.webp', 'foto-7.webp', 'foto-8.webp', 'foto-9.webp', 'foto-10.webp', 'foto-11.webp', 'foto-12.webp', 'foto-13.webp', 'foto-14.webp', 'foto-15.webp', 'foto-16.webp', 'foto-17.webp'] }
+
 ];
 
 const galeriaGrid = document.getElementById('galeriaGrid');
@@ -2164,13 +2231,23 @@ galerias.forEach((g, idx) => {
   if (idx % 4 === 2) card.classList.add('delay-2');
   if (idx % 4 === 3) card.classList.add('delay-3');
 
-  const slidesHTML = g.fotos.map((f, i) => `
+  const slidesHTML = g.fotos.map((f, i) => {
+    const caminho = `imagens/${g.pasta}/${f}`;
+    const label = `${g.titulo} — foto ${i+1}`;
+    return `
     <div class="slide ${i===0?'active':''}" data-index="${i}">
-      <div class="placeholder" alt="${g.titulo} ${i+1}">
-        <span>📷 ${f}</span>
+      <img
+        src="${caminho}"
+        alt="${label}"
+        class="slide-img"
+        loading="lazy"
+        onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
+      >
+      <div class="placeholder" style="display:none">
+        <span>📷 imagens/${g.pasta}/${f}</span>
       </div>
-    </div>
-  `).join('');
+    </div>`;
+  }).join('');
 
   const dotsHTML = g.fotos.map((_, i) => `<div class="dot ${i===0?'active':''}" data-index="${i}"></div>`).join('');
 

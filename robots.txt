@@ -1,0 +1,26 @@
+# ============================================================
+#  robots.txt — Stylo Arte Serralheria e Vidraçaria
+#  https://www.styloarteserralheria.com.br
+#  Atualizado: 2026-05-07
+# ============================================================
+
+# Permite todos os bots de busca (Google, Bing, etc.)
+User-agent: *
+Allow: /
+
+# Bloqueia acesso a arquivos desnecessários para indexação
+Disallow: /cdn-cgi/
+Disallow: /*.json$
+
+# Bots específicos — permissão total
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /imagens/
+
+User-agent: Bingbot
+Allow: /
+
+# Referência ao Sitemap (OBRIGATÓRIO para o Google encontrar)
+Sitemap: https://www.styloarteserralheria.com.br/sitemap.xml

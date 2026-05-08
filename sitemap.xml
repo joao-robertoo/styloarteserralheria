@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- ========== PÁGINA PRINCIPAL ========== -->
+  <url>
+    <loc>https://www.styloarteserralheria.com.br/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+
+    <!-- Imagem da logo -->
+    <image:image>
+      <image:loc>https://www.styloarteserralheria.com.br/logo-styloarte.png</image:loc>
+      <image:title>Stylo Arte - Serralheria e Vidraçaria em Itaquera SP</image:title>
+      <image:caption>Logo da Stylo Arte Serralheria e Vidraçaria, Itaquera, São Paulo</image:caption>
+    </image:image>
+
+    <!-- Hero -->
+    <image:image>
+      <image:loc>https://www.styloarteserralheria.com.br/hero-principal.png</image:loc>
+      <image:title>Serralheria e Vidraçaria Stylo Arte - 28 anos de experiência</image:title>
+      <image:caption>Fachada e portfólio da Stylo Arte, especializada em esquadrias de alumínio e vidraçaria em Itaquera</image:caption>
+    </image:image>
+
+    <!-- Galeria: Fechamento de Pia e Escadas -->
+    <image:image>
+      <image:loc>https://www.styloarteserralheria.com.br/imagens/fechamento-pia-escada/foto-1.jpeg</image:loc>
+      <image:title>Fechamento de Pia em Alumínio - Stylo Arte Itaquera</image:title>
+      <image:caption>Fechamento de pia e escada em alumínio sob medida, instalado pela Stylo Arte em São Paulo</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.styloarteserralheria.com.br/imagens/fechamento-pia-escada/foto-2.jpeg</image:loc>
+      <image:title>Fechamento de Escada em Alumínio - Stylo Arte</image:title>
+      <image:caption>Projeto de fechamento de escada com perfis de alumínio premium</image:caption>
+    </image:image>
+
+    <!-- Galeria: Portas de Alumínio -->
+    <image:image>
+      <image:loc>https://www.styloarteserralheria.com.br/imagens/portas-aluminio/foto-1.jpeg</image:loc>
+      <image:title>Porta de Alumínio sob medida - Serralheria Itaquera SP</image:title>
+      <image:caption>Porta de alumínio fabricada e instalada pela Stylo Arte em Itaquera, São Paulo</image:caption>
+    </image:image>
+
+    <!-- Galeria: Janelas de Alumínio -->
+    <image:image>
+      <image:loc>https://www.styloarteserralheria.com.br/imagens/janelas-aluminio/foto-1.jpeg</image:loc>
+      <image:title>Janela de Alumínio - Vidraçaria Itaquera SP</image:title>
+      <image:caption>Janela de alumínio com vidro temperado, fabricada sob medida pela Stylo Arte</image:caption>
+    </image:image>
+
+    <!-- Galeria: Portões de Alumínio -->
+    <image:image>
+      <image:loc>https://www.styloarteserralheria.com.br/imagens/portoes-aluminio/foto-1.jpeg</image:loc>
+      <image:title>Portão de Alumínio - Serralheria Zona Leste SP</image:title>
+      <image:caption>Portão de alumínio com acabamento premium, projeto Stylo Arte Itaquera</image:caption>
+    </image:image>
+
+    <!-- Galeria: Box de Vidro -->
+    <image:image>
+      <image:loc>https://www.styloarteserralheria.com.br/imagens/box-vidro/foto-1.jpeg</image:loc>
+      <image:title>Box de Vidro para Banheiro - Vidraçaria Itaquera SP</image:title>
+      <image:caption>Box de vidro temperado sob medida para banheiro, instalado pela Stylo Arte em São Paulo</image:caption>
+    </image:image>
+
+    <!-- Galeria: Grades e Corrimões -->
+    <image:image>
+      <image:loc>https://www.styloarteserralheria.com.br/imagens/grades-corrimoes/foto-1.jpeg</image:loc>
+      <image:title>Grades e Corrimões de Alumínio - Stylo Arte</image:title>
+      <image:caption>Grades de segurança e corrimões em alumínio fabricados pela Stylo Arte, Itaquera SP</image:caption>
+    </image:image>
+
+    <!-- Galeria: Guarda Corpo -->
+    <image:image>
+      <image:loc>https://www.styloarteserralheria.com.br/imagens/guarda-corpo/foto-1.jpeg</image:loc>
+      <image:title>Guarda Corpo de Alumínio e Vidro - Stylo Arte Itaquera</image:title>
+      <image:caption>Guarda corpo em alumínio com vidro temperado, projeto sob medida Stylo Arte</image:caption>
+    </image:image>
+
+    <!-- Galeria: Expositores -->
+    <image:image>
+      <image:loc>https://www.styloarteserralheria.com.br/imagens/expositores/foto-1.jpeg</image:loc>
+      <image:title>Expositores em Alumínio e Vidro - Serralheria Comercial SP</image:title>
+      <image:caption>Expositores comerciais em alumínio e vidro fabricados pela Stylo Arte</image:caption>
+    </image:image>
+
+    <!-- Galeria: Porta Camarão -->
+    <image:image>
+      <image:loc>https://www.styloarteserralheria.com.br/imagens/portas-camarao/foto-1.jpeg</image:loc>
+      <image:title>Porta Camarão de Alumínio - Stylo Arte Itaquera SP</image:title>
+      <image:caption>Porta camarão em alumínio, funcional e elegante, fabricada sob medida</image:caption>
+    </image:image>
+
+    <!-- Galeria: Telas Mosquiteiros -->
+    <image:image>
+      <image:loc>https://www.styloarteserralheria.com.br/imagens/telas-mosquiteiros/foto-1.jpeg</image:loc>
+      <image:title>Telas Mosquiteiras sob medida - Serralheria Itaquera</image:title>
+      <image:caption>Telas mosquiteiras instaladas pela Stylo Arte em Itaquera, São Paulo</image:caption>
+    </image:image>
+
+    <!-- Fachada da empresa -->
+    <image:image>
+      <image:loc>https://www.styloarteserralheria.com.br/imagens/empresa/fachada.png</image:loc>
+      <image:title>Fachada da Stylo Arte Serralheria - Av. Aiziro Zarur 808 Itaquera SP</image:title>
+      <image:caption>Fachada da Stylo Arte Serralheria e Vidraçaria, localizada na Av. Aiziro Zarur, 808, Itaquera, São Paulo</image:caption>
+    </image:image>
+
+  </url>
+
+</urlset>
