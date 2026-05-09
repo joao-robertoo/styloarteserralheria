@@ -699,6 +699,31 @@ section {
   transition: transform 0.6s ease;
   border-radius: 0;
 }
+
+/* ── Vídeo nos cards ── */
+.slide-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 0;
+}
+
+.video-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: rgba(192,57,43,0.9);
+  color: white;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 4px 10px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  z-index: 4;
+}
+
 .galeria-card:hover .slide-img {
   transform: scale(1.05);
 }
@@ -2219,7 +2244,13 @@ const galerias = [
 
   { titulo: 'Porta Camarão',        pasta: 'portas-camarao',     fotos: ['foto-1.webp','foto-2.webp','foto-3.webp', 'foto-4.webp', 'foto-5.webp', 'foto-6.webp', 'foto-7.webp', 'foto-8.webp', 'foto-9.webp', 'foto-10.webp', 'foto-11.webp'] },
 
-  { titulo: 'Telas Mosquiteiros',   pasta: 'telas-mosquiteiros', fotos: ['foto-1.webp','foto-2.webp','foto-3.webp', 'foto-4.webp', 'foto-5.webp', 'foto-6.webp', 'foto-7.webp', 'foto-8.webp', 'foto-9.webp', 'foto-10.webp', 'foto-11.webp', 'foto-12.webp', 'foto-13.webp', 'foto-14.webp', 'foto-15.webp', 'foto-16.webp', 'foto-17.webp'] }
+  { titulo: 'Telas Mosquiteiros',   pasta: 'telas-mosquiteiros', fotos: ['foto-1.webp','foto-2.webp','foto-3.webp', 'foto-4.webp', 'foto-5.webp', 'foto-6.webp', 'foto-7.webp', 'foto-8.webp', 'foto-9.webp', 'foto-10.webp', 'foto-11.webp', 'foto-12.webp', 'foto-13.webp', 'foto-14.webp', 'foto-15.webp', 'foto-16.webp', 'foto-17.webp'] },
+
+  { titulo: 'Divisórias de Escritório', pasta: 'divisorias', video: 'videos/divisorias-escritorio.webm', fotos: [] },
+
+  { titulo: 'Persiana Automatizada', pasta: 'persianas', video: 'videos/persiana-automatizada.webm', fotos: [] },
+
+  { titulo: 'Persiana Automatizada 2', pasta: 'persianas', video: 'videos/persiana-automatizada-2.webm', fotos: [] },
 
 ];
 
@@ -2231,7 +2262,20 @@ galerias.forEach((g, idx) => {
   if (idx % 4 === 2) card.classList.add('delay-2');
   if (idx % 4 === 3) card.classList.add('delay-3');
 
-  const slidesHTML = g.fotos.map((f, i) => {
+  // Gera conteúdo do slideshow — vídeo ou fotos
+let slideshowContent = '';
+if (g.video) {
+  slideshowContent = `
+    <div class="slide active">
+      <video class="slide-video" autoplay muted loop playsinline preload="none">
+        <source src="${g.video}" type="video/webm">
+        <source src="${g.video.replace('.webm', '.mp4')}" type="video/mp4">
+      </video>
+    </div>
+    <div class="video-badge">▶ Vídeo</div>
+  `;
+} else {
+  slideshowContent = g.fotos.map((f, i) => {
     const caminho = `imagens/${g.pasta}/${f}`;
     const label = `${g.titulo} — foto ${i+1}`;
     return `
@@ -2248,24 +2292,27 @@ galerias.forEach((g, idx) => {
       </div>
     </div>`;
   }).join('');
+}
 
-  const dotsHTML = g.fotos.map((_, i) => `<div class="dot ${i===0?'active':''}" data-index="${i}"></div>`).join('');
+const dotsHTML = g.video ? '' : g.fotos.map((_, i) =>
+  `<div class="dot ${i===0?'active':''}" data-index="${i}"></div>`
+).join('');
 
-  const msg = encodeURIComponent(`Olá! Gostaria de um orçamento para ${g.titulo}.`);
+const msg = encodeURIComponent(`Olá! Gostaria de um orçamento para ${g.titulo}.`);
 
-  card.innerHTML = `
-    <div class="galeria-card-header">${g.titulo}</div>
-    <div class="slideshow">
-      ${slidesHTML}
-      <div class="slideshow-dots">${dotsHTML}</div>
-    </div>
-    <div class="galeria-card-footer">
-      <a href="https://wa.me/5511995345603?text=${msg}" target="_blank" class="btn-orcamento">Solicitar Orçamento</a>
-    </div>
-  `;
-  galeriaGrid.appendChild(card);
+card.innerHTML = `
+  <div class="galeria-card-header">${g.titulo}</div>
+  <div class="slideshow">
+    ${slideshowContent}
+    ${dotsHTML ? `<div class="slideshow-dots">${dotsHTML}</div>` : ''}
+  </div>
+  <div class="galeria-card-footer">
+    <a href="https://wa.me/5511995345603?text=${msg}" target="_blank" class="btn-orcamento">Solicitar Orçamento</a>
+  </div>
+`;
 
-  // Slideshow automático
+// Só ativa slideshow automático se tiver fotos
+if (!g.video) {
   let currentSlide = 0;
   const slides = card.querySelectorAll('.slide');
   const dots = card.querySelectorAll('.dot');
@@ -2276,10 +2323,13 @@ galerias.forEach((g, idx) => {
     slides[currentSlide].classList.add('active');
     dots[currentSlide].classList.add('active');
   }, 3000);
+}
+
+galeriaGrid.appendChild(card);
 });
 
 // Re-observa cards de galeria criados dinamicamente
-document.querySelectorAll('.galeria-card.reveal').forEach(el => revealObserver.observe(el));
+document.querySelectorAll('.galeria-card.reveal')
 
 /* ========== DEPOIMENTOS ESTEIRA ========== */
 const depoimentos = [
